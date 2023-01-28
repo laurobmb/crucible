@@ -19,3 +19,4 @@
     cmd: "ping -c 1 -W 2 {{ ntp_server }}"
   changed_when: False
   when: (setup_ntp_service | default(True)) != True
+  ignore_errors: true

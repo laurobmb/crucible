@@ -32,4 +32,4 @@ http_proxy: ""
 https_proxy: ""
 no_proxy: ""
 
-use_hostname_workaround: false
+use_hostname_workaround: true

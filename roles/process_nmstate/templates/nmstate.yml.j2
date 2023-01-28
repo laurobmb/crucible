@@ -12,6 +12,7 @@ interfaces:
   - name: {{ interface.name }}
     state: {{ interface.state | default('up') }}
     type: {{ interface.type | default('ethernet') }}
+    mtu: {{ interface.mtu | default(1500) }}
     {% if interface.addresses.ipv4 is defined %}
     ipv4:
       address:
